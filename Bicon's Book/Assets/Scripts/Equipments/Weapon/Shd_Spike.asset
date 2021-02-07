@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b5b5c218a6777479d4e68d59319003, type: 3}
+  m_Name: Shd_Spike
+  m_EditorClassIdentifier: 
+  EqmName: "\u9CDE\u7532\u76FE"
+  SlotTypes: 0000000001000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: d9fcba24cb18cbd48b2923d71a39add3, type: 3}
+  - {fileID: 2447476736917493928, guid: d9fcba24cb18cbd48b2923d71a39add3, type: 3}
+  - {fileID: 2447476736917493928, guid: 082522df1a4d80a48b28b08ee92a5065, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes: []
+  isDefaultEquipment: 0
+  MaxArmor: 52
+  CurrentArmor: 52
+  Weight: 10
+  ExtraHealth: 0
+  Value: 55
+  Rare: 0
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0
+  weaponSprite:
+  - {fileID: 21300000, guid: fa157633a0406d54b8e9bb0f0b31fef4, type: 3}
+  - {fileID: 21300000, guid: 16ace06a3f0dfdd4ba3fb0f1236d65aa, type: 3}
+  - {fileID: 0}
+  weaponType: 4
+  WeaponDamage: 52
+  WeaponSpecial: 0

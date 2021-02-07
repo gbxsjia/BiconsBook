@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: QSLight_Armor
+  m_EditorClassIdentifier: 
+  EqmName: "\u9752\u77F3\u6821\u5C09\u76D4\u7532"
+  SlotTypes: 06000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: b373d2c0e106d3648aa88280e5c2df0d, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: 9c758fe9f3a488a4487ed3d74189530e, type: 2}
+  - {fileID: 11400000, guid: a4cf9d91730f62948b252694500e6431, type: 2}
+  - {fileID: 11400000, guid: 0dc74fcc7969d6747a2f1ae9e03d87ad, type: 2}
+  - {fileID: 11400000, guid: 91285707d1ff28443951473f5c6a849a, type: 2}
+  - {fileID: 11400000, guid: b35fb45505cf4b04482570ab6ea7b005, type: 2}
+  - {fileID: 11400000, guid: e4f1d574d6a12b34e84f2a3f3ea62e81, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 161
+  CurrentArmor: 161
+  Weight: 14
+  ExtraHealth: 0
+  Value: 63
+  Rare: 2
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0
+  UpdateCheckID: 994285

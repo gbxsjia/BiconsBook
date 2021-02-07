@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: XiBei_Glove
+  m_EditorClassIdentifier: 
+  EqmName: "\u897F\u8D1D\u65B0\u5175\u624B\u7532"
+  SlotTypes: 0800000009000000
+  EquipmentCards: []
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: bfce56feead40594c8955b68dcb815f9, type: 2}
+  - {fileID: 11400000, guid: f775d4ec567790a4fa96322ef707dcee, type: 2}
+  - {fileID: 11400000, guid: ae4c93f1b376b02499c18a9c68397692, type: 2}
+  - {fileID: 11400000, guid: b81a34ae0de7ee84d8d514a5abe29874, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 6
+  CurrentArmor: 6
+  Weight: 1
+  ExtraHealth: 0
+  Value: 38
+  Rare: 0
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0

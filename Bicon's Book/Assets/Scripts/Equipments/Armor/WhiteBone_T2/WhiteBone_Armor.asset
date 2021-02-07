@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: WhiteBone_Armor
+  m_EditorClassIdentifier: 
+  EqmName: "\u52A0\u5F3A\u7684\u9AA8\u5236\u6218\u7532"
+  SlotTypes: 06000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: a4ce7a9fd9efd604da60a45e7cb656f3, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: 0049d67c75d0a4245892f625a8943f5d, type: 2}
+  - {fileID: 11400000, guid: 1e34b28b0db16bd418e549fabc0e939d, type: 2}
+  - {fileID: 11400000, guid: c16b95b43e8a6194c820ace5b6ffd199, type: 2}
+  - {fileID: 11400000, guid: 36fdcf7b0d5e1df4a9a0e0a77ee58cb6, type: 2}
+  - {fileID: 11400000, guid: 2c610cc2debc43644a0b51654be190d3, type: 2}
+  - {fileID: 11400000, guid: c3c406ba7be3df54eb0bbac21063287b, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 63
+  CurrentArmor: 63
+  Weight: 12
+  ExtraHealth: 0
+  Value: 20
+  Rare: 1
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0
+  UpdateCheckID: 653686
