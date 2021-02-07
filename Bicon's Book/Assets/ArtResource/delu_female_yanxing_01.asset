@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8393f4767465a49c9aa63d65002904a4, type: 3}
+  m_Name: delu_female_yanxing_01
+  m_EditorClassIdentifier: 
+  raceType: 2
+  sexType: 1
+  modelType: 4
+  SkinMeshes:
+  - {fileID: 11400000, guid: b8f58aee1a37f784da8900645abd0598, type: 2}
+  - {fileID: 11400000, guid: 237f84dcf4a6c9e458f671e8879eb75b, type: 2}
+  - {fileID: 11400000, guid: ac24e076110d38c46b1c00f1d5c103f2, type: 2}
+  - {fileID: 11400000, guid: 156cbbc10382a594aac5150a15a9e52f, type: 2}
+  - {fileID: 11400000, guid: 353be0855fc500d419c4408719bb314b, type: 2}

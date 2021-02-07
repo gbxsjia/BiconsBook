@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: WD_ArmArmor
+  m_EditorClassIdentifier: 
+  EqmName: "\u6D41\u4EA1\u4E49\u58EB\u81C2\u94E0"
+  SlotTypes: 0200000003000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: feba4151bf93c9440899d776e0f4bf28, type: 3}
+  - {fileID: 2447476736917493928, guid: dbc0130f9fc69db4691616b73b869121, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: 5fb7dce01b2d9414d83383103adfd571, type: 2}
+  - {fileID: 11400000, guid: 9d5aafeaa9460c648b7adafb5b61dafd, type: 2}
+  - {fileID: 11400000, guid: 98beebb2a6c610a4aa57b021f36c081a, type: 2}
+  - {fileID: 11400000, guid: 234dddc4fb16a5e4d9f335641e382a36, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 28
+  CurrentArmor: 28
+  Weight: 4
+  ExtraHealth: 0
+  Value: 24
+  Rare: 0
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0
+  UpdateCheckID: 696502

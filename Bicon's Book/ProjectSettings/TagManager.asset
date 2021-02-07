@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Missile
+  - Punch
+  - PerfectPunch
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcess
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BattleScene
+    uniqueID: 556314111
+    locked: 0
+  - name: BG
+    uniqueID: 3721001415
+    locked: 0
+  - name: MG
+    uniqueID: 3869201343
+    locked: 0
+  - name: FG
+    uniqueID: 3065711511
+    locked: 0
+  - name: Bird
+    uniqueID: 2157005057
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 2804922119
+    locked: 0
+  - name: Player
+    uniqueID: 4195911041
+    locked: 0
+  - name: BattleGroundEffects
+    uniqueID: 2728636437
+    locked: 0
+  - name: Opponent
+    uniqueID: 2067153861
+    locked: 0
+  - name: Caster
+    uniqueID: 3652658013
+    locked: 0
+  - name: AnimationEffects
+    uniqueID: 2138574681
+    locked: 0

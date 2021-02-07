@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: SunKnight_ArmArmor
+  m_EditorClassIdentifier: 
+  EqmName: "\u9EC4\u660F\u9A91\u58EB\u81C2\u94E0"
+  SlotTypes: 0200000003000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: 14f08ccdf3c68e1409ec2f50649cc2f2, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: 9258cb4256e90f6408d1bd77d29c7301, type: 2}
+  - {fileID: 11400000, guid: abf033ff790f0d64498a80911cdacec5, type: 2}
+  - {fileID: 11400000, guid: e228d2efc57f9d5418922e7d055899c8, type: 2}
+  - {fileID: 11400000, guid: 7c4686b27a9ff1f439aa86761532c9f2, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 65
+  CurrentArmor: 65
+  Weight: 4
+  ExtraHealth: 0
+  Value: 54
+  Rare: 0
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0

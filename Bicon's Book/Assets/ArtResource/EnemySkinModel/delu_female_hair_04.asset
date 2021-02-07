@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8393f4767465a49c9aa63d65002904a4, type: 3}
+  m_Name: delu_female_hair_04
+  m_EditorClassIdentifier: 
+  raceType: 2
+  sexType: 1
+  modelType: 0
+  SkinMeshes:
+  - {fileID: 11400000, guid: 342ab48ce431a984da339c3a68ad06ce, type: 2}
+  - {fileID: 11400000, guid: 09bf7185bd17cd844b41f71f9e8270a9, type: 2}
+  - {fileID: 11400000, guid: 7e3a888195b856741a813e201d52a0b4, type: 2}

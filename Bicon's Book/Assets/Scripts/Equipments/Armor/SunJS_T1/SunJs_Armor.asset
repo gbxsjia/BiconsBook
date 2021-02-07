@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: SunJs_Armor
+  m_EditorClassIdentifier: 
+  EqmName: "\u7EA2\u65E5\u796D\u7940\u957F\u888D"
+  SlotTypes: 06000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: 30cb14693435f8344a2843cc186a57fd, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: 4304782ad6c466f4b9a50342948f5055, type: 2}
+  - {fileID: 11400000, guid: c020d949871017c4b9d281231a7c60c6, type: 2}
+  - {fileID: 11400000, guid: 0ccf1907722efb9469c90149427cf7ae, type: 2}
+  - {fileID: 11400000, guid: ddc6d72db15c8494fa01e0118b91c877, type: 2}
+  - {fileID: 11400000, guid: ad5e9ca8d03778d41bd0546c1331c7f0, type: 2}
+  - {fileID: 11400000, guid: 647401f810658134ab5578dbf2f0e3ba, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 72
+  CurrentArmor: 72
+  Weight: 12
+  ExtraHealth: 0
+  Value: 46
+  Rare: 0
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: SunJs_LegArmor
+  m_EditorClassIdentifier: 
+  EqmName: "\u7EA2\u65E5\u796D\u7940\u88E4\u817F"
+  SlotTypes: 0400000005000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: 86b13e117a8bfd646920559ae8c26b6b, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: 2cd315fa2ecf89148873e848402fcb5b, type: 2}
+  - {fileID: 11400000, guid: 6ea51ee83def49a46897fc827fa24709, type: 2}
+  - {fileID: 11400000, guid: 95987efe1e0cf8648b86468cc6069949, type: 2}
+  - {fileID: 11400000, guid: 8776c05bedcddc44385c8f9a2388f065, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 42
+  CurrentArmor: 42
+  Weight: 5
+  ExtraHealth: 0
+  Value: 46
+  Rare: 0
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0

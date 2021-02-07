@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a575db933e071f48a90af0381397519, type: 3}
+  m_Name: WDL_Helmet 2
+  m_EditorClassIdentifier: 
+  EqmName: "\u5353\u8D8A\u7684\u6D41\u4EA1\u9886\u961F\u5934\u76D4"
+  SlotTypes: 07000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: c337e92523a434e48a60826781fe35c4, type: 3}
+  - {fileID: 2447476736917493928, guid: d731bd1a6ead0ce498d10c809358d969, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: d9edd19423560c3458fc689cbc3a4ef3, type: 2}
+  - {fileID: 11400000, guid: 3ee9ea5846c7f634aab23a2adb24af92, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 112
+  CurrentArmor: 112
+  Weight: 7
+  ExtraHealth: 0
+  Value: 56
+  Rare: 2
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0
+  UpdateCheckID: 628553
+  HideHair: 1
