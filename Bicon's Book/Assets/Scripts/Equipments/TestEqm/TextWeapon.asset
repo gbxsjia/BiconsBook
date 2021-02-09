@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b5b5c218a6777479d4e68d59319003, type: 3}
+  m_Name: TextWeapon
+  m_EditorClassIdentifier: 
+  EqmName: "\u6D4B\u8BD5\u5251"
+  SlotTypes: 0000000001000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: 86f98f484e1fe7d488227c7306dcc07d, type: 3}
+  - {fileID: 2447476736917493928, guid: c11e789523159f44e8954275b9ea7b16, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes: []
+  isDefaultEquipment: 0
+  MaxArmor: 0
+  CurrentArmor: 0
+  Weight: 0
+  ExtraHealth: 0
+  Value: 0
+  Rare: 0
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0
+  UpdateCheckID: 0
+  weaponSprite:
+  - {fileID: 21300000, guid: 37481d3e9d3054346b95f5d9d347cbcc, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  weaponType: 6
+  WeaponDamage: 1
+  WeaponSpecial: 0

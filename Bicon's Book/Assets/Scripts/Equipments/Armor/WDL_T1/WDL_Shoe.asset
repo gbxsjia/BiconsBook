@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: WDL_Shoe
+  m_EditorClassIdentifier: 
+  EqmName: "\u6D41\u4EA1\u9886\u961F\u6218\u9774"
+  SlotTypes: 0c0000000d000000
+  EquipmentCards: []
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: d7ff9ccba18e66342ad5acea87a77729, type: 2}
+  - {fileID: 11400000, guid: 64ef5f23d01721a40a8a41edda334056, type: 2}
+  - {fileID: 11400000, guid: 6639c49d3f512a14e85da1ba9bcff9a6, type: 2}
+  - {fileID: 11400000, guid: f94fad4b0a84b65478fca89fe2fbd27c, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 10
+  CurrentArmor: 10
+  Weight: 2
+  ExtraHealth: 0
+  Value: 34
+  Rare: 0
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0
+  UpdateCheckID: 666671

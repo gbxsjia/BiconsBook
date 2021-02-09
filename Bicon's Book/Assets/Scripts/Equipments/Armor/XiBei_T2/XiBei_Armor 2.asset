@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: XiBei_Armor 2
+  m_EditorClassIdentifier: 
+  EqmName: "\u52A0\u5F3A\u7684\u897F\u8D1D\u65B0\u5175\u8F7B\u51EF"
+  SlotTypes: 06000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: 48540ca9c13b8c844b3ce39bc7703ff4, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: d6333168515732a469656201ace8d49a, type: 2}
+  - {fileID: 11400000, guid: cc2924cb76bcf924a86275f540a180f5, type: 2}
+  - {fileID: 11400000, guid: bc0e0bea779113144a4411783d3f62b3, type: 2}
+  - {fileID: 11400000, guid: f71bd98be2b2137468febfe11360af4f, type: 2}
+  - {fileID: 11400000, guid: 4bc513bd11a06f54ea063ae1edf6bed5, type: 2}
+  - {fileID: 11400000, guid: fb4b9a1564bb4c04fa7fb5474a3d9538, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 84
+  CurrentArmor: 84
+  Weight: 12
+  ExtraHealth: 0
+  Value: 46
+  Rare: 1
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0

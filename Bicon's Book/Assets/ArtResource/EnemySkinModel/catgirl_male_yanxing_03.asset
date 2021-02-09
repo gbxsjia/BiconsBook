@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8393f4767465a49c9aa63d65002904a4, type: 3}
+  m_Name: catgirl_male_yanxing_03
+  m_EditorClassIdentifier: 
+  raceType: 1
+  sexType: 0
+  modelType: 4
+  SkinMeshes:
+  - {fileID: 11400000, guid: cbe787e46aa9153438ecdf48e0748487, type: 2}
+  - {fileID: 11400000, guid: d144a9f8cda555a4d922150e43b12856, type: 2}
+  - {fileID: 11400000, guid: c023970ca3d9ec241b975e745d562603, type: 2}
+  - {fileID: 11400000, guid: e7ec8ca288e79fa4993b001edaaba284, type: 2}
+  - {fileID: 11400000, guid: 947c1e00bf2e7d6439977a802cf7eb6a, type: 2}

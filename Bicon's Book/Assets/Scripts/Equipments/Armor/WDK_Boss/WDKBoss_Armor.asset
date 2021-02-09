@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b09ee599188d4db8f69bdba3b4ddf, type: 3}
+  m_Name: WDKBoss_Armor
+  m_EditorClassIdentifier: 
+  EqmName: "\u6D41\u4EA1\u9886\u4E3B\u6218\u7532"
+  SlotTypes: 06000000
+  EquipmentCards:
+  - {fileID: 2447476736917493928, guid: c69dcd6944e302f4582817db1651b8a9, type: 3}
+  - {fileID: 2447476736917493928, guid: c11e789523159f44e8954275b9ea7b16, type: 3}
+  BounsCard: {fileID: 0}
+  spriteMeshes:
+  - {fileID: 11400000, guid: 1e02f7b3d5c97454f8bf633952c9331e, type: 2}
+  - {fileID: 11400000, guid: 39fd4cb001b76044d8644bebddaa68e8, type: 2}
+  - {fileID: 11400000, guid: 438235afedaebc94aa28bade6e6e39a7, type: 2}
+  - {fileID: 11400000, guid: d1b6ff3bfb5cb4e44b8345be3932dd44, type: 2}
+  - {fileID: 11400000, guid: 2cf944926defe3740b0847c194651ead, type: 2}
+  - {fileID: 11400000, guid: 1014dfc25dcdc8d40ae3182710b9a260, type: 2}
+  - {fileID: 11400000, guid: b460cbb05a68f154ca89edf23b0f31ea, type: 2}
+  - {fileID: 11400000, guid: 00be8b80369f25d4080654437d506dfd, type: 2}
+  - {fileID: 11400000, guid: 122a6591cb416c849b803a6deb6d4b16, type: 2}
+  isDefaultEquipment: 0
+  MaxArmor: 250
+  CurrentArmor: 250
+  Weight: 16
+  ExtraHealth: 0
+  Value: 85
+  Rare: 3
+  AttachedBodyPart: {fileID: 0}
+  AttachedSlotIndex: 0
+  UpdateCheckID: 467241
