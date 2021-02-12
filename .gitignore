@@ -82,3 +82,4 @@ crashlytics-build.properties
 !**/Bicon's Book/Library/MonoManager.asset
 !**/Bicon's Book/Library/SceneVisibilityState.asset
 !**/Bicon's Book/Library/SpriteAtlasDatabase.asset
+Bicon's Book/.DS_Store
