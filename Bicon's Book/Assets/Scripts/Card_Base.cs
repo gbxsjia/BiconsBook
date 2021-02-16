@@ -34,6 +34,8 @@ public class Card_Base : MonoBehaviour
 
     public Sprite[] EffectSprites;
 
+    public CardAnimInfo[] AnimData;
+
     private void Awake()
     {
         StaminaInitialCost = StaminaCost;

@@ -295,6 +295,10 @@ public class CharacterManager : MonoBehaviour
     {
         string animationName = AnimationManager.GetAnimationName(type, height, direction);
 
+        PlayAnimation(animationName);
+    }
+    public void PlayAnimation(string animationName)
+    {
         characterAnimator.Play(animationName);
         equipmentAnimator.Play(animationName);
     }

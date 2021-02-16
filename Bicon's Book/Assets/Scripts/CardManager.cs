@@ -1081,7 +1081,7 @@ public class CardManager : MonoBehaviour
             }
         }
     }
-    public AnimDirection BodyPartToDirection(BodyPartType type)
+    public static AnimDirection BodyPartToDirection(BodyPartType type)
     {
         switch (type)
         {
@@ -1103,7 +1103,7 @@ public class CardManager : MonoBehaviour
         }
     }
 
-    public AnimDirection SlotToAnimDirection(EquipmentType slot)
+    public static AnimDirection SlotToAnimDirection(EquipmentType slot)
     {
         switch (slot)
         {

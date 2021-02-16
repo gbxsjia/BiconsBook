@@ -11,6 +11,8 @@ public class SkinTesterTool : MonoBehaviour
     public SpriteMesh[] SkinMeshes3;
     public SpriteMesh[] SkinMeshes4;
     public SpriteMesh[] SkinMeshes5;
+    [SerializeField]
+    private Material material;
     public void GetAllSkinRenders()
     {
         Component[] components = GetComponentsInChildren(typeof(SpriteMeshInstance), true);
@@ -32,6 +34,7 @@ public class SkinTesterTool : MonoBehaviour
                     SkinRenders[j] = components[i] as SpriteMeshInstance;
                     SkinMeshes1[j] = SkinRenders[j].spriteMesh;
                     Have = true;
+                    SkinRenders[j].sharedMaterial = material;
                 }
             }
 
@@ -49,7 +52,7 @@ public class SkinTesterTool : MonoBehaviour
         {
             for (int j = 0; j < SkinRenders.Length; j++)
             {
-                if (SkinMeshes1[j].name == SkinRenders[i].name)
+                if (SkinMeshes1[j]!=null && SkinRenders[i]!=null && SkinMeshes1[j].name == SkinRenders[i].name)
                 {
                     SkinRenders[i].spriteMesh = SkinMeshes1[j];
                 }
