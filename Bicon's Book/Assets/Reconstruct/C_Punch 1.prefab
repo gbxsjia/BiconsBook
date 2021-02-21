@@ -141,12 +141,12 @@ PrefabInstance:
     - target: {fileID: 1429272310061790881, guid: fba142f5505cff34797ca1593730fcd9,
         type: 3}
       propertyPath: AnimData.Array.data[1].CasterType
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1429272310061790881, guid: fba142f5505cff34797ca1593730fcd9,
         type: 3}
       propertyPath: AnimData.Array.data[2].CasterType
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1429272310061790881, guid: fba142f5505cff34797ca1593730fcd9,
         type: 3}

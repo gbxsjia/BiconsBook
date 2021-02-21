@@ -12,8 +12,13 @@ public class AnimTest : MonoBehaviour
     public BattleAnimData data;
     private void Start()
     {
+        StartCoroutine(delay());
+    }
+    private IEnumerator delay()
+    {
+        yield return new WaitForSeconds(2);
         var CardAnimInfo = data.CasterCard.AnimData;
-        SingleAnimData[] single= new SingleAnimData[CardAnimInfo.Length];
+        SingleAnimData[] single = new SingleAnimData[CardAnimInfo.Length];
         for (int i = 0; i < single.Length; i++)
         {
             single[i] = new SingleAnimData();
@@ -22,6 +27,6 @@ public class AnimTest : MonoBehaviour
             single[i].CasterAnimName = AnimationManager.GetAnimationName(CardAnimInfo[i].CasterType, InGameManager.BodyTypeToHeightIndex(targetType), direction);
             single[i].OpponentAnimName = AnimationManager.GetAnimationName(CardAnimInfo[i].OpponentType, InGameManager.BodyTypeToHeightIndex(targetType), CardManager.BodyPartToDirection(targetType));
         }
-        animationController.StartBattleAnimation(data,single);
+        animationController.StartBattleAnimation(data, single);
     }
 }

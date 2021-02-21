@@ -50,11 +50,15 @@ public class Card_Appearance : MonoBehaviour
     public void PointExit()
     {
         PointStay = false;
-        if (UIManager.instance.MouseStayCard == gameObject)
+        if (UIManager.instance && UIManager.instance.MouseStayCard == gameObject)
         {
-            UIManager.instance.MouseStayCard = null;            
+            UIManager.instance.MouseStayCard = null;
         }
-        UIManager.instance.UpdateCardSibling();
+        if (UIManager.instance)
+        {
+            UIManager.instance.UpdateCardSibling();
+        }
+      
     }
     private void OnDisable()
     {
@@ -351,7 +355,11 @@ public class Card_Appearance : MonoBehaviour
         {
             StaminaCost.text = "-";
         }
-        CardFrameImage.sprite = ArtResourceManager.instance.GetCardBackground(card.rareLevel);
+        if (ArtResourceManager.instance)
+        {
+            CardFrameImage.sprite = ArtResourceManager.instance.GetCardBackground(card.rareLevel);
+            CardBackImage.sprite = ArtResourceManager.instance.GetCardBackgroundSprite(card.cardType);
+        }
         if (card.MinDistance <= 1)
         {
             Range.text = card.MaxDistance.ToString();
@@ -364,7 +372,7 @@ public class Card_Appearance : MonoBehaviour
         {
             Range.text = card.MinDistance.ToString() + "~" + card.MaxDistance.ToString();
         }
-        CardBackImage.sprite = ArtResourceManager.instance.GetCardBackgroundSprite(card.cardType);
+       
         if (card.ownerEquipment != null)
         {
             BodyPartIconImage.sprite = ArtResourceManager.instance.GetCardBodypartIcon(card.ownerEquipment.AttachedSlotIndex);

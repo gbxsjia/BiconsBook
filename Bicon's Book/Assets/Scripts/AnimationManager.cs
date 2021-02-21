@@ -606,24 +606,28 @@ public class AnimationManager : MonoBehaviour
     // two hand WeaponType++ 
     public string GetIdleAnimationName(EquipmentManager equipmentManager)
     {
-        HoldingWeaponType type = equipmentManager.GetHoldingWeaponType();
-        switch (type)
+        if (equipmentManager)
         {
-            case HoldingWeaponType.BareHand:
-                return "idle_hand";
-            case HoldingWeaponType.Single:
-                if (equipmentManager.GetWeapon(true) != null && !equipmentManager.GetWeapon(true).isDefaultEquipment)
-                {
-                    return "Idle_onehand_left";
-                }
-                else
-                {
-                    return "Idle_onehand_right";
-                }
-            case HoldingWeaponType.Dual:
-                return "idle_dual";
-            default: return "";
+            HoldingWeaponType type = equipmentManager.GetHoldingWeaponType();
+            switch (type)
+            {
+                case HoldingWeaponType.BareHand:
+                    return "idle_hand";
+                case HoldingWeaponType.Single:
+                    if (equipmentManager.GetWeapon(true) != null && !equipmentManager.GetWeapon(true).isDefaultEquipment)
+                    {
+                        return "Idle_onehand_left";
+                    }
+                    else
+                    {
+                        return "Idle_onehand_right";
+                    }
+                case HoldingWeaponType.Dual:
+                    return "idle_dual";
+                default: return "";
+            }
         }
+        return "idle_hand";
     }
     public string GetMovementAnimationName(EquipmentManager equipmentManager, bool isForward)
     {
