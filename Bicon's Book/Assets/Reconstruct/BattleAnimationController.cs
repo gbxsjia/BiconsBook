@@ -7,6 +7,7 @@ public class BattleAnimationController : MonoBehaviour
     public static bool isInAnimationMode;
 
     public Canvas CurtainCanvas;
+    public Canvas CardCanvas;
     public GameObject AnimationCurtain;
     public Animator animator;
     public Transform TrailParent;
@@ -18,10 +19,20 @@ public class BattleAnimationController : MonoBehaviour
     private BattleAnimData battleAnimData;
     private SingleAnimData[] singleAnims;
 
+    private Camera MainCam;
 
+    private float DurationMoveToCenter=0.5f;
+    private float DurationMoveToSide=0.5f;
+    private float DurationShowCard=2;
+    [SerializeField]
+    private float CameraZDistance;
+
+    private Vector3 CasterStartPos;
+    private Vector3 OpponentStartPos;
     private void Start()
     {
-        CurtainCanvas.worldCamera = Camera.main;
+        MainCam = Camera.main;
+        CurtainCanvas.worldCamera = MainCam; 
     }
     private void EnterAnimationMode()
     {
@@ -55,6 +66,9 @@ public class BattleAnimationController : MonoBehaviour
         }
 
         AnimationCurtain.SetActive(false);
+
+        battleAnimData.CasterObject.transform.position = CasterStartPos;
+        battleAnimData.OpponentObject.transform.position = OpponentStartPos;
     }
     public void StartBattleAnimation(BattleAnimData data, SingleAnimData[] singleData)
     {
@@ -62,6 +76,8 @@ public class BattleAnimationController : MonoBehaviour
         {
             EnterAnimationMode();
         }
+        CasterStartPos = data.CasterObject.transform.position;
+        OpponentStartPos = data.OpponentObject.transform.position;
 
         battleAnimData = data;
         singleAnims = singleData;
@@ -69,40 +85,72 @@ public class BattleAnimationController : MonoBehaviour
         {
             TrailParent.transform.localScale = new Vector3(-1, 1, 1);
         }
-        StartCoroutine(OneCardAnimProgress());
+        StartCoroutine(ShowCardProgress());
     }
 
-    private IEnumerator OneCardAnimProgress()
+    private IEnumerator ShowCardProgress()
     {
         // Card display part
-        GameObject casterCardDisplay = Instantiate(CardDisplayPrefab,CurtainCanvas.transform);
+        GameObject casterCardDisplay = Instantiate(CardDisplayPrefab, CardCanvas.transform);
         Card_Appearance casterCardAppearance = casterCardDisplay.GetComponent<Card_Appearance>();
         casterCardAppearance.card = battleAnimData.CasterCard;
-        casterCardDisplay.transform.position = battleAnimData.CasterObject.transform.position;
+        casterCardDisplay.transform.position = new Vector3(0, -200);
+
+        float timer = DurationMoveToCenter;;
+        Vector3 startPos = casterCardDisplay.transform.position;
+        Vector3 endPos = Vector3.zero;
+        while (timer > 0)
+        {
+            casterCardDisplay.transform.localPosition = Vector3.Lerp(startPos, endPos, 1- timer / DurationMoveToCenter);
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.5f);
 
         GameObject opponentCardDisplay = null;
         if (battleAnimData.OpponentCard)
-        {
-            opponentCardDisplay = Instantiate(CardDisplayPrefab, CurtainCanvas.transform);
-            Card_Appearance opponentCardAppearance = casterCardDisplay.GetComponent<Card_Appearance>();
+        { 
+
+            timer = DurationMoveToSide;
+            startPos = Vector3.zero;
+            endPos = new Vector3(150,0);
+            if (battleAnimData.CasterOnLeft)
+            {
+                endPos = new Vector3(-150, 0);
+            }
+            while (timer > 0)
+            {
+                casterCardDisplay.transform.localPosition = Vector3.Lerp(startPos, endPos, 1- timer / DurationMoveToSide);
+                timer -= Time.deltaTime;
+                yield return null;
+            }
+
+            opponentCardDisplay = Instantiate(CardDisplayPrefab, CardCanvas.transform);
+            Card_Appearance opponentCardAppearance = opponentCardDisplay.GetComponent<Card_Appearance>();
             opponentCardAppearance.card = battleAnimData.OpponentCard;
-            opponentCardDisplay.transform.position = battleAnimData.OpponentCard.transform.position;
+            opponentCardDisplay.transform.localPosition = new Vector3(150, 0);
         }
 
-        float timer = 2;
+        // Play some Effect!
+
+        timer = 2;
         while (timer > 0)
         {
-
             timer -= Time.deltaTime;
             yield return null;
         }
         Destroy(casterCardDisplay);
-
         if (battleAnimData.OpponentObject)
         {
             Destroy(opponentCardDisplay);
         }
-        // Character animation part
+
+
+        StartCoroutine(BattleAnimProgress());
+    }
+    private IEnumerator BattleAnimProgress()
+    {
 
         int animTimes = singleAnims.Length;
         int currentIndex=0;
@@ -112,18 +160,30 @@ public class BattleAnimationController : MonoBehaviour
 
         while (currentIndex < animTimes)
         {
+            // Camera Shake
+            if (CameraManager.instance)
+            {
+                CameraManager.instance.CameraShake(0.2f);
+            }
+
             animator.Play(singleAnims[currentIndex].TrailClipName,0,0);
 
             CasterCharacter.PlayAnimation(singleAnims[currentIndex].CasterAnimName);
             OpponentCharacter.PlayAnimation(singleAnims[currentIndex].OpponentAnimName);
 
             yield return null;
-            timer = animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+            float timer = animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
             while (timer > 0)
             {
                 timer -= Time.deltaTime;
-                battleAnimData.CasterObject.transform.position = LeftTrailPoint.position;
-                battleAnimData.OpponentObject.transform.position = RightTrailPoint.position;
+
+                Vector3 position = LeftTrailPoint.position;
+                position.z = MainCam.transform.position.z + CameraZDistance;
+                battleAnimData.CasterObject.transform.position = position;
+
+                position = RightTrailPoint.position;
+                position.z = MainCam.transform.position.z + CameraZDistance;
+                battleAnimData.OpponentObject.transform.position = position;
                 yield return null;
             }
 

@@ -42,9 +42,12 @@ public class CameraManager : MonoBehaviour
 
     private void Start()
     {
-        InGameManager.instance.OnTurnChanged += OnTurnChange;
-        InGameManager.instance.BattleStartEvent += OnBattleStart;
-        InGameManager.instance.ReturnToCampEvent += CameraReset;
+        if (InGameManager.instance)
+        {
+            InGameManager.instance.OnTurnChanged += OnTurnChange;
+            InGameManager.instance.BattleStartEvent += OnBattleStart;
+            InGameManager.instance.ReturnToCampEvent += CameraReset;
+        }
     }
 
     private void OnBattleStart()
